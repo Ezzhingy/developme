@@ -1,0 +1,140 @@
+:root {
+  --light-green: #c5e8e1;
+  --medium-green: #8bd0c2;
+  --dark-green: #16a085;
+  --button-green: #1abc9c;
+  --cream-brown: #e8e1c5;
+  --header-footer-brown: #bab8b1;
+  --dark-brown-font: #747163;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--header-footer-brown);
+}
+
+.left-header,
+.right-header {
+  align-items: center;
+  display: flex;
+  gap: 50px;
+  margin: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo a {
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.header a {
+  text-decoration: none;
+  color: var(--dark-brown-font);
+}
+
+.body-container {
+  background-color: var(--light-green);
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.triangle {
+  position: absolute;
+  top: 20%;
+}
+
+.fancy-change {
+  color: var(--dark-green);
+}
+
+.body-container h1,
+.body-container h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.body-container h1 {
+  font-size: 3rem;
+}
+
+.body-container h2 {
+  font-size: 1.8rem;
+}
+
+.body-container h3 {
+  width: 50%;
+}
+
+.hook-container {
+  grid-row: 1;
+}
+
+.info-container {
+  grid-row: 2;
+  width: 50%;
+}
+
+.hook-container {
+  z-index: 1;
+  padding: 10% 10%;
+}
+
+.info-container {
+  z-index: 1;
+  padding: 0 10%;
+}
+
+.fancy-change {
+  font-size: 2.5rem;
+  font-style: italic;
+}
+
+.trio {
+  position: absolute;
+  right: 0;
+  top: 20%;
+}
+
+.create-web-btn {
+  background-color: var(--button-green);
+  color: var(--light-green);
+  font-weight: 700;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  margin: 10% 0;
+}
+
+.create-web-btn:hover {
+  cursor: pointer;
+  background-color: var(--dark-green);
+}
+
+.footer {
+  font-size: 1rem;
+  display: flex;
+  margin-top: auto;
+  justify-content: center;
+  background-color: var(--header-footer-brown);
+}
+
+.footer p {
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer a:hover {
+  font-weight: 700;
+}
